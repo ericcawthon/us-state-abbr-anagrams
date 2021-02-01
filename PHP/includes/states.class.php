@@ -34,7 +34,6 @@ class states
     {
         $sql = "SELECT word, GROUP_CONCAT(st_string) as strings, COUNT(*) as st_string_count 
                 FROM matched_words 
-                WHERE word in ('animator', 'condemns', 'diamonds', 'dioramas', 'flagrant', 'galavant', 'moleskin', 'nominate', 'ornament', 'ransomed')
                 GROUP BY word";
         $matched_words = $this->DBase->get_rows($sql);
         $return_array = array();

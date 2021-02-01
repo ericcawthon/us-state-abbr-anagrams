@@ -8,7 +8,6 @@ include('states.class.php');
 $stobj = new States($DBase);
 include('util.class.php');
 
-$i = 0;
 $strings_list = array();
 foreach ($stobj->state_abbrs as $st)
 {
@@ -39,8 +38,6 @@ foreach ($stobj->state_abbrs as $st)
     }
     array_pop($current_states);
 }
-echo $i;
-util::debug($strings_list);
 
 $stobj->saveStringsList($strings_list);
 ?>
