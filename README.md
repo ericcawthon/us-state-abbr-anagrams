@@ -40,19 +40,18 @@ The resulting CSV of eight-letter state abbreviation strings and the anagrams fo
 
 My scripts found 50 eight-letter anagrams out of the nearly 3000 possible four state combinations, of which only 10 words I would consider "common":
 
-## Word | Four Adjacent States
-
-------- | --------------------
-Animator | IA > MO > TN > AR
-Condemns | MN > DS > NE > CO ; NM > CO > NE > SD
-Diamonds | ND > SD > IA > MO
-Dioramas | SD > IA > MO > AR
-Flagrant | FL > GA > TN > AR
-Galavant | VA > TN > AL > GA
-Moleskin | IL > MO > KS > NE
-Nominate | NE > IA > MO > TN
-Ornament | NE > MO > TN > AR
-Ransomed | AR > MO > NE > SD
+| Word     | Four Adjacent States                  |
+| -------- | ------------------------------------- |
+| Animator | IA > MO > TN > AR                     |
+| Condemns | MN > DS > NE > CO ; NM > CO > NE > SD |
+| Diamonds | ND > SD > IA > MO                     |
+| Dioramas | SD > IA > MO > AR                     |
+| Flagrant | FL > GA > TN > AR                     |
+| Galavant | VA > TN > AL > GA                     |
+| Moleskin | IL > MO > KS > NE                     |
+| Nominate | NE > IA > MO > TN                     |
+| Ornament | NE > MO > TN > AR                     |
+| Ransomed | AR > MO > NE > SD                     |
 
 **Note: The above state combinations found the same words when checked in a different order, which is why the matched_words.csv is so much longer**
 
