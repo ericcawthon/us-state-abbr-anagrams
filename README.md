@@ -12,7 +12,7 @@ It sounded like an interesting problem that could easily be sovled with computer
 
 First, I pulled up a [map of the United States](https://www.google.com/maps/place/United+States) that showed state boundaries. I went state by state, creating a list of adjacent states and making a list of their abbreviations.
 
-The resulting file can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/state_connections.xlsx).
+The resulting file can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/state_connections.csv).
 
 ## MySQL Setup
 
@@ -25,6 +25,8 @@ The details of that database can be found [here](https://github.com/ericcawthon/
 I wrote a script in PHP which generated every possible four state combination based on the connections I had documented earlier. Nearly 3000 combinations were generated and written to the `combinations8` table.
 
 My script can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/PHP/index.php).
+
+The CSV containing the combinations generated can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/combinations8.csv).
 
 ## R Script to Find Anagrams
 
