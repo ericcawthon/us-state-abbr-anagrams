@@ -4,7 +4,7 @@ Using PHP and R to find eight-letter words that are anagrams of four adjacent US
 
 ## The Challenge
 
-I heard a puzzle challenge on the radio to find a common eight-letter word spelled from the US state postal abbreviations of states that can be driven between. For more details, see the relevant [Sunday Puzzle](https://www.npr.org/2021/01/31/962412357/sunday-puzzle-game-of-words) page.
+I heard a puzzle challenge on the radio to find a common eight-letter word spelled from the US state postal abbreviations of states that can be driven between. For more details, see the **This week's challenge** section of the relevant [Sunday Puzzle](https://www.npr.org/2021/01/31/962412357/sunday-puzzle-game-of-words) page.
 
 It sounded like an interested problem that could easily be sovled with computer science, so I decided to give it a try.
 
@@ -53,6 +53,6 @@ My scripts found 50 eight-letter anagrams out of the nearly 3000 possible four s
 | Ornament | NE > MO > TN > AR                     |
 | Ransomed | AR > MO > NE > SD                     |
 
-**Note: The above state combinations found the same words when checked in a different order, which is why the matched_words.csv is so much longer**
+_Note: The above state combinations found the same words when checked in a different order, which is why the matched_words.csv is so much longer_
 
-The complete list of anagrams can be found [here](<[here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/distinct_anagrams.csv).>)
+The complete list of anagrams can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/distinct_anagrams.csv).
