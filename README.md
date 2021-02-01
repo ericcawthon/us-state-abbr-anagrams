@@ -40,7 +40,7 @@ The resulting CSV of eight-letter state abbreviation strings and the anagrams fo
 
 My scripts found 50 eight-letter anagrams out of the nearly 3000 possible four state combinations, of which only 10 words I would consider "common":
 
-Word | Four Adjacent States
+## Word | Four Adjacent States
 
 Animator | IA > MO > TN > AR
 Condemns | MN > DS > NE > CO ; NM > CO > NE > SD
