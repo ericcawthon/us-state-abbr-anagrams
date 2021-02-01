@@ -42,6 +42,7 @@ My scripts found 50 eight-letter anagrams out of the nearly 3000 possible four s
 
 ## Word | Four Adjacent States
 
+------- | --------------------
 Animator | IA > MO > TN > AR
 Condemns | MN > DS > NE > CO ; NM > CO > NE > SD
 Diamonds | ND > SD > IA > MO
