@@ -4,13 +4,13 @@ Using PHP and R to find eight-letter words that are anagrams of four adjacent US
 
 ## The Challenge
 
-I heard a puzzle challenge on the radio to find a common eight-letter word spelled from the US state postal abbreviations of states that can be driven between. For more details, see the **This week's challenge** section of the relevant [Sunday Puzzle](https://www.npr.org/2021/01/31/962412357/sunday-puzzle-game-of-words) page.
+I heard a puzzle challenge on the radio to find a common eight-letter word spelled from the US state postal abbreviations of states that can be driven between. For more details, see the **This week's challenge** section of the January 31st, 2021 [Sunday Puzzle](https://www.npr.org/2021/01/31/962412357/sunday-puzzle-game-of-words) page.
 
-It sounded like an interested problem that could easily be sovled with computer science, so I decided to give it a try.
+It sounded like an interesting problem that could easily be sovled with computer science, so I decided to give it a try.
 
 ## Preparing Data
 
-First, I pulled up a [simple map of the United States](https://www.google.com/maps/place/United+States) that showed state boundaries. I went state by state, creating a list of adjacent states and maing a list of their abbreviations.
+First, I pulled up a [map of the United States](https://www.google.com/maps/place/United+States) that showed state boundaries. I went state by state, creating a list of adjacent states and making a list of their abbreviations.
 
 The resulting file can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/state_connections.xlsx).
 
@@ -30,7 +30,7 @@ My script can be found [here](https://github.com/ericcawthon/us-state-abbr-anagr
 
 With all possible combinations in hand, I then needed to check them for anagrams that were common English word. I did not find a web API I was satisfied would be up for the task, but did find the [wfindr R package](https://github.com/idmn/wfindr) that seemed perfect for the job. I deduplicated the data in my `combinations8` table and exported the combinations to a CSV file for use with R. That file can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/combinations8.csv).
 
-My R script looped through each of the eight-letter state abbreviation combinations and fed each through the `find_word` function to find any eight-letter anagrams and saved any words it found to a dataframe which was exported as a CSV once the script finished runnig=ng.
+My R script looped through each of the eight-letter state abbreviation combinations and fed each through the `find_word` function to find any eight-letter anagrams and saved any words it found to a dataframe which was exported as a CSV once the script finished running.
 
 My R script can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/R/anagram_finder.r).
 
@@ -52,6 +52,6 @@ My scripts found 50 eight-letter anagrams out of the nearly 3000 possible four s
 | Ornament | NE > MO > TN > AR                     |
 | Ransomed | AR > MO > NE > SD                     |
 
-_Note: The above state combinations found the same words when checked in a different order, which is why the matched_words.csv is so much longer_
+_Note: The above state combinations found the same words when checked in a different order, which is why the matched_words.csv is so much longer_.
 
 The complete list of anagrams can be found [here](https://github.com/ericcawthon/us-state-abbr-anagrams/blob/main/Data/distinct_anagrams.csv).
